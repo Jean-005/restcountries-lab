@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 
-const Country = ({ country }) => {
+const Country = ({ country, onMarkVisited }) => {
     const [isChecked, setIsChecked] = useState(false);
 
     const handleCheckboxChange = () => {
         setIsChecked(!isChecked);
+        onMarkVisited(country, !isChecked);
     };
 
     return (

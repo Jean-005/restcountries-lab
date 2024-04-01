@@ -2,6 +2,19 @@
   text-align: left;
 }
 
+.country-container {
+  display: flex;
+}
+
+.country-list {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.visited-countries {
+  flex: 1;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
